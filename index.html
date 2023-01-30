@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,75 @@
     <link rel="stylesheet" href="styles.css">
     <title>Sign Up Form</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>The code review</h1>
+    </header>
+
+    <div class="container">
+
+
+        <section class="heading-container">
+            <h2>Signup for our newsletter</h2>
+            <p class="heading-description">Get the latest news on how your code is doing right in your inbox</p>
+            <hr class="thick-line">
+            <hr class="small-line">
+        </section>
+
+        <form action="index.html">
+            <fieldset class="first-fieldset">
+                <legend>Contact Information</legend>
+                <label for="user_name">Full Name</label>
+                <input type="text" id="user_name" name="user_info" placeholder="required" required>
+
+                <label for="user_email">Email Address</label>
+                <input type="email" id="user_email" name="user_info" placeholder="required" required>
+
+                <label for="user_number">Phone Number</label>
+                <input type="telephone" id="user_number" name="user_info">
+
+                <label for="user_address">Street Address</label>
+                <input type="address" id="user_address" name="user_info">
+
+                <label for="user_city">City</label>
+                <input type="text" id="user_city" name="user_info">
+
+                <label for="user_province">Province</label>
+                <select name="user_info" id="user_province">
+                    <option value="#">Select a province:</option>
+                    <option value="alberta">Alberta</option>
+                    <option value="british-columbia">British Columbia</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="New Brunswick">New Brunswick</option>
+                    <option value="newfoundland-and-labrador">Newfoundland and Labrador</option>
+                    <option value="northwest-territories">Northwest Territories</option>
+                    <option value="Nova Scotia">Select a province:</option>
+                    <option value="Nunavut">Nunavut</option>
+                </select>
+                <label for="user_zipcode">Zip Code</label>
+                <input type="text" id="user_zipcode" name="user_info">
+            </fieldset>
+            
+            <hr class="small-line">
+
+            <fieldset class="second-fieldset">
+                <legend>Newsletter</legend>
+
+                <label>Select the newsletters your would like to receive</label>
+
+                <input type="checkbox" id="html-news" name="newsletter">
+                <label for="html-news">HTML News</label>
+
+                <input type="checkbox" id="css-news" name="newsletter">
+                <label for="css-nws">CSS News</label>
+                
+                <input type="checkbox" id="javascript-news" name="newsletter">
+                <label for="javascript-news">Javascript News</label>
+                
+            </fieldset>
+        </form>
+    </div>
 </body>
+
 </html>
