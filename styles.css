@@ -1,3 +1,183 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100vw;
+    background-color: rgb(34, 43, 53);
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    padding: 30px 0;
+}
+
+.heading-container {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p.heading-description {
+    color: grey;
+    font-size: 0.8em;
+    line-height: 20px;
+}
+
+.thick-line {
+    border: 2px solid black;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.small-line {
+    margin-top: 3px;
+}
+
+
+form {
+    text-align: left;
+}
+
+legend {
+    margin-bottom: 20px;
+}
+
+.first-fieldset input, .first-fieldset label, .first-fieldset select {
+    display: block;
+    margin: 20px 0;
+}
+
+.first-fieldset input {
+    transition: padding 0.5s;
+}
+
+.first-fieldset input, .first-fieldset select {
+    background-color: rgb(234, 230, 230);
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+option:first-of-type {
+    color: darkgrey;
+}
+
+.first-fieldset input:nth-of-type(1)::placeholder, .first-fieldset input:nth-of-type(2)::placeholder {
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.newsletter-label {
+    display: block;
+}
+
+.second-fieldset input {
+    display: inline-block;
+}
+
+.second-fieldset input:not(:first-of-type){
+    margin-top: 15px;
+}
+
+label[for="javascript-news"]{
+    margin-bottom: 20px;
+}
+
+/**** Animatinos ****/
+
+.first-fieldset input:focus {
+    padding: 18px 25px;
+    outline: none;
+}
+
+
+#html-news {
+    margin-top: 20px;
+}
+
+.newsletter-label {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.other-topics {
+    display: block;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    background-color: rgb(234, 230, 230);
+    border: none;
+    margin-top: 15px;
+
+}
+
+button {
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgb(66, 175, 166);
+    border: none;
+    font-family: inherit;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.footer-description {
+    margin-top: 20px;
+    color: grey;
+
+    text-align: center;
+}
+
+
+/******** Tablet size and bigger *******/
+
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 700px;
+    }
+
+    .flexbox-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .flexbox-container label {
+        flex-basis: 30%;
+    }
+    .flexbox-container input,  .flexbox-container select{
+        flex-basis: 70%;
+    }
+
+    #user_zipcode {
+        flex-basis: 30%;
+    }
+}
