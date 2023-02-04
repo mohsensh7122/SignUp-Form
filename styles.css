@@ -47,12 +47,20 @@ p.heading-description {
 }
 
 .small-line {
-    margin-top: 3px;
+    border: 0;
+    width: 100%;
+    clear:both;
+    display:block;              
+    background-color: black;
+    height: 1px;
+    margin-bottom: 20px;
 }
 
 
 form {
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 legend {
@@ -61,11 +69,13 @@ legend {
 
 .first-fieldset input, .first-fieldset label, .first-fieldset select {
     display: block;
-    margin: 20px 0;
+    margin: 20px 0;;
 }
 
-.first-fieldset input {
-    transition: padding 0.5s;
+
+
+#user_zipcode {
+    width: 25%;
 }
 
 .first-fieldset input, .first-fieldset select {
@@ -85,6 +95,10 @@ option:first-of-type {
     text-transform: capitalize;
 }
 
+form {
+    color: rgb(68, 85, 103)
+}
+
 .newsletter-label {
     display: block;
 }
@@ -101,11 +115,17 @@ label[for="javascript-news"]{
     margin-bottom: 20px;
 }
 
-/**** Animatinos ****/
+/**** Animations ****/
+
+.first-fieldset input {
+    transition: padding 0.5s ease-out;
+}
+
 
 .first-fieldset input:focus {
     padding: 18px 25px;
     outline: none;
+    border: 2px solid grey;
 }
 
 
@@ -149,10 +169,10 @@ button {
 }
 
 .footer-description {
-    margin-top: 20px;
+    margin-top: 30px;
     color: grey;
-
     text-align: center;
+    padding-bottom: 30px;
 }
 
 
@@ -165,10 +185,7 @@ button {
         max-width: 700px;
     }
 
-    .flexbox-container {
-        display: flex;
-        align-items: center;
-    }
+    
 
     .flexbox-container label {
         flex-basis: 30%;
@@ -177,7 +194,5 @@ button {
         flex-basis: 70%;
     }
 
-    #user_zipcode {
-        flex-basis: 30%;
-    }
+    
 }
