@@ -15,7 +15,7 @@ body {
 
 header {
     width: 100vw;
-    background-color: rgb(34, 43, 53);
+    background-color: #3A606E;
     margin-bottom: 30px;
 }
 
@@ -23,6 +23,8 @@ h1 {
     text-transform: uppercase;
     color: white;
     padding: 30px 0;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .heading-container {
@@ -75,7 +77,7 @@ legend {
 
 
 #user_zipcode {
-    width: 25%;
+    width: 50%;
 }
 
 .first-fieldset input, .first-fieldset select {
@@ -90,9 +92,14 @@ option:first-of-type {
     color: darkgrey;
 }
 
-.first-fieldset input:nth-of-type(1)::placeholder, .first-fieldset input:nth-of-type(2)::placeholder {
+.first-fieldset input::placeholder {
     text-align: right;
     text-transform: capitalize;
+}
+
+#user_zipcode::placeholder {
+    text-align: left;
+    text-transform: none;
 }
 
 form {
@@ -117,7 +124,7 @@ label[for="javascript-news"]{
 
 /**** Animations ****/
 
-.first-fieldset input {
+.first-fieldset input, textarea {
     transition: padding 0.5s ease-out;
 }
 
@@ -151,10 +158,15 @@ textarea {
 
 }
 
+textarea:focus {
+    padding: 18px 25px;
+    outline: none;
+}
+
 button {
     width: 100%;
     padding: 15px 0;
-    background-color: rgb(66, 175, 166);
+    background-color: #393f39;
     border: none;
     font-family: inherit;
     margin-top: 20px;
@@ -162,6 +174,11 @@ button {
     font-weight: bold;
     font-size: 20px;
     border-radius: 5px;
+}
+
+button:hover, button:focus {
+    background-color: #828E82;
+    cursor: pointer;
 }
 
 .italic {
@@ -185,7 +202,14 @@ button {
         max-width: 700px;
     }
 
-    
+    .flexbox-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #user_zipcode {
+        width: 25%;
+    }
 
     .flexbox-container label {
         flex-basis: 30%;
