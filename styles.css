@@ -207,8 +207,8 @@ button:hover, button:focus {
         align-items: center;
     }
 
-    #user_zipcode {
-        width: 25%;
+    input#user_zipcode {
+        max-width: 25%;
     }
 
     .flexbox-container label {
